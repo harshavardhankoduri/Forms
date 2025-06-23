@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="./index.html" method="get" autocomplete="off">
+        <fieldset>
+            <h1><center>TELANGANA STATE ROAD TRANSPORT CORPORATION</center></h1>
+            <h1><center>GENERAL BUS PASS APPLICATION</center></h1>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Registration Form</b></legend>
+        <fieldset>
+            <legend><b>Applicant Details</b></legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required name="first">
+                    </td>
+                    <td>
+                        <label for="fathername">Fathers/Guardian's Name:</label>
+                        <input type="text" id="fathername" required name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Date of Birth:</label>
+                        <input type="date" id="date" required name="date">
+                    </td>
+                    <td>
+                        <label for="male">Gender:</label>
+                        <input type="radio" id="male" name="Gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="Gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>                  
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Mobile No:</label>
+                        <input type="tel" id="num" required name="num">
+                    </td>
+                    <td>
+                        <label for="mail">Email Id:</label>
+                        <input type="email" id="mail" required name="mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pdf">Photo:</label>
+                        <input type="file" id="pdf" accept="application/pdf" name="pdf">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Residential Address Details</b></legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address"></textarea>
+                    </td>
+                    <td>
+                            <label for="value">District:</label>
+                            <select name="value" id="value">
+                            <option value="hyd">HYDERABAD</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pincode">Pincode:</label>
+                        <input type="text" id="pincode" required maxlength="6" name="pincode">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Pass Type Details</b></legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="value">City:</label>
+                        <select name="value" id="value">
+                            <option value="hyd">HYDERABAD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passtype">Pass Type:</label>
+                        <select name="passtype" id="passtype">
+                            <option value="pass">General Pass</option>
+                            <option value="pass">Ordinary Pass</option>
+                            <option value="pass">Metro Pass</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="stdate">Start Date:</label>
+                        <input type="date" id="stdate" required name="stdate">
+                    </td>
+                    <td>
+                        <label for="enddate">End Date:</label>
+                        <input type="date" id="enddate" required name="enddate">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Mode of Payment & Pass Collection:</b></legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="payment">Pass Type:</label>
+                        <select name="payment" id="payment">
+                            <option value="pass">Online</option>
+                            <option value="pass">Offline</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="delivery">Pass Delivery Mode</label>
+                        <select name="delivery" id="delivery">
+                            <option value="home">Address Delivery</option>
+                            <option value="counter">Counter Pickup</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <center>
+            <img src="./capcha.jpeg" alt="capcha" width="100">
+            <br>
+            <input type="text" name="capcha" required="" placeholder="Enter Captcha" maxlength="6" min="6">
+            <br><br>
+            <button>Submit</button></center>
+        </fieldset>
+    </form>
+</body>
+</html>
